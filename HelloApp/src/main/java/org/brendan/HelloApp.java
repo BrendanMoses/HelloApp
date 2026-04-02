@@ -1,13 +1,8 @@
-package org.example;
+package org.brendan;
 
 public class HelloApp {
     public static void main(String[] args) {
-        String result;
-        if (args.length > 0) {
-            result = String.join(", ", args);
-        } else {
-            result = "World";
-        }
-        System.out.println("Hello, " + result + "!");
+        String name = args[0];
+        System.out.println("Hello, " + name + "!");
     }
 }
