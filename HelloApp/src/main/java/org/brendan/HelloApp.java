@@ -1,4 +1,4 @@
-package org.example;
+package org.brendan;
 
 public class HelloApp {
     public static void main(String[] args) {
