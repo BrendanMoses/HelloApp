@@ -2,7 +2,17 @@ package org.brendan;
 
 public class HelloApp {
     public static void main(String[] args) {
-        String name = (args.length > 0) ? args[0] : "World";
-        System.out.println("Hello, " + name + "!");
+        StringBuilder names = new StringBuilder();
+        if (args.length == 0) {
+            names.append("World");
+        } else {
+            for (String name : args) {
+                if (names.length() > 0) {
+                    names.append(", ");
+                }
+                names.append(name);
+            }
+        }
+        System.out.println("Hello, " + names + "!");
     }
 }
